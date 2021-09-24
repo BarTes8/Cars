@@ -15,6 +15,16 @@ enum class ManualGear : int {
    limit = gear_9th
 };
 
+enum class AutomatGear : int {
+   reverse = -1,
+   neutral,
+   park, 
+   low, 
+   drive,
+   overdrive,
+   limit = overdrive
+};
+
 class Gearable {
 public:
    virtual ~Gearable() = default;
