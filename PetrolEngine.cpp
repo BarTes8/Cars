@@ -14,6 +14,10 @@ PetrolEngine::~PetrolEngine() {
     std::cout << __FUNCTION__ << std::endl;
 }
 
+Power PetrolEngine::getPower() const { return power_; }
+PetrolCapacity PetrolEngine::getCapacity() const { return capacity_; }
+int PetrolEngine::getGears() const { return gears_; }
+
 void PetrolEngine::changeGear(int gear){
     if(currentGear_ < 0 && gear > 0){
         throw InvalidGear("InvalidGear error: change from R to gear");

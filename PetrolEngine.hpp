@@ -8,9 +8,9 @@ public:
     PetrolEngine(Power power, PetrolCapacity capacity, int gears);
     ~PetrolEngine() override;
 
-    Power getPower() const { return power_; }
-    PetrolCapacity getCapacity() const { return capacity_; }
-    int getGears() const { return gears_; }
+    Power getPower() const;
+    PetrolCapacity getCapacity() const;
+    int getGears() const;
     
     void changeGear(int gear) override;
 
