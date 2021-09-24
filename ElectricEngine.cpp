@@ -11,3 +11,6 @@ ElectricEngine::ElectricEngine(Power power, ElectricCapacity batteryCapacity)
 ElectricEngine::~ElectricEngine() {
     std::cout << __FUNCTION__ << std::endl;
 }
+
+Power ElectricEngine::getPower() const { return power_; }
+ElectricCapacity ElectricEngine::getBatteryCapacity() const { return batteryCapacity_; }
