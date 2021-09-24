@@ -7,6 +7,10 @@ class PetrolEngine : virtual Engine, public Gearable {
 public:
     PetrolEngine(Power power, PetrolCapacity capacity, int gears);
     ~PetrolEngine() override;
+
+    Power getPower() const { return power_; }
+    PetrolCapacity getCapacity() const { return capacity_; }
+    int getGears() const { return gears_; }
     
     void changeGear(int gear) override;
 
